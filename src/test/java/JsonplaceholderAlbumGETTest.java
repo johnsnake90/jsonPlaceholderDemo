@@ -4,9 +4,6 @@ import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.sql.SQLOutput;
-import java.util.List;
-
 import static io.restassured.RestAssured.given;
 
 public class JsonplaceholderAlbumGETTest {

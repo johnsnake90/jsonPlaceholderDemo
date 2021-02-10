@@ -1,4 +1,3 @@
-import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
 import org.apache.http.HttpStatus;
 
