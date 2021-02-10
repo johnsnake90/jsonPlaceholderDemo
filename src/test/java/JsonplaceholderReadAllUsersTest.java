@@ -28,12 +28,12 @@ public class JsonplaceholderReadAllUsersTest {
         JsonPath json = response.jsonPath();
         List<String> emails = json.getList("email");
 
-        long polishEmails=emails.stream()
+        long polishEmails = emails.stream()
                 .filter(s -> s.endsWith(".pl"))
                 .count();
 
-        System.out.println("polishEmails "+polishEmails);
-        Assertions.assertTrue(polishEmails==0);
+        System.out.println("polishEmails " + polishEmails);
+        Assertions.assertTrue(polishEmails == 0);
 
     }
 
@@ -50,12 +50,12 @@ public class JsonplaceholderReadAllUsersTest {
         JsonPath json = response.jsonPath();
         List<String> emails = json.getList("email");
 
-        long bizEmails=emails.stream()
+        long bizEmails = emails.stream()
                 .filter(s -> s.endsWith(".biz"))
                 .count();
 
-        System.out.println("bizEmails "+bizEmails);
-        Assertions.assertTrue(bizEmails!=0);
+        System.out.println("bizEmails " + bizEmails);
+        Assertions.assertTrue(bizEmails >= 0);
     }
 
 }
